@@ -6,14 +6,15 @@ spring:
       ddl-auto: create-drop
     properties:
       hibernate:
+        format_sql: false
         jdbc:
           batch_size: 1000
         connection:
           provider_disables_autocommit: true
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PWD}
+    url: jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+    username: sa
+    password: sa
 decorator:
   datasource:
     datasource-proxy:

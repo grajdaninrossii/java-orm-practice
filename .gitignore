@@ -27,5 +27,5 @@ hs_err_pid*
 replay_pid*
 
 # Application
-*/target
-*/.env
+**/target
+**/.env

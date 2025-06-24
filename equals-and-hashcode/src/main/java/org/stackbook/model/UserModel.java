@@ -1,4 +1,4 @@
-package org.stackbook;
+package org.stackbook.model;
 
 public record UserModel() {
 }
