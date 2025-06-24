@@ -13,8 +13,8 @@ import lombok.ToString;
  * - support Proxy with Base class for equals
  * - consistency in hash structures (only in Transaction)
  * cons:
- * - the hashCode function returns a different result for the Proxy and for the Base class
- * - need overrides for child class
+ * - violation of the equals and hashcode contract
+ * - the hashCode will create query for Proxy
  */
 @Getter
 @Setter

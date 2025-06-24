@@ -27,7 +27,7 @@ import java.util.UUID;
 @Setter
 @ToString
 @Entity
-@Table(name = "users_uuid")
+@Table(name = "USERS_UUID")
 public class UserUuid {
 
     @Id
@@ -38,8 +38,8 @@ public class UserUuid {
 
     @Override
     public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        return getId() == ((UserUuid) o).getId();
+        if (!(o instanceof UserUuid user)) return false;
+        return getId() == user.getId();
     }
 
     @Override

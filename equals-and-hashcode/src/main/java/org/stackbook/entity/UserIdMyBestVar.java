@@ -13,7 +13,7 @@ import lombok.ToString;
  * - support Proxy with Base class for equals
  * - consistency in hash structures
  * cons:
- * - need overrides for child class
+ * - Cannot be redefined the equals and hashCode
  */
 @Getter
 @Setter
@@ -31,7 +31,6 @@ public class UserIdMyBestVar {
     @Override
     public final boolean equals(Object o) {
         if (!(o instanceof UserIdMyBestVar that)) return false;
-
         return getId() != null && getId().equals(that.getId());
     }
 

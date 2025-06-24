@@ -1,4 +1,7 @@
 package org.stackbook.model;
 
-public record UserModel() {
+public record UserModel(
+        String id,
+        String name
+) {
 }
