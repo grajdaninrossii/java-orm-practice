@@ -1,0 +1,26 @@
+spring:
+  jpa:
+    show-sql: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 1000
+        connection:
+          provider_disables_autocommit: true
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PWD}
+decorator:
+  datasource:
+    datasource-proxy:
+      multiline: false
+logging:
+  level:
+    net:
+      ttddyy:
+        dsproxy:
+          listener: debug
