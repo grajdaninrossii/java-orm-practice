@@ -325,5 +325,5 @@
 4) [И еще Lombok](https://habr.com/ru/companies/haulmont/articles/564682/)
 5) [Baeldung и его реализация, не выдерживающая реальности](https://www.baeldung.com/jpa-entity-equality)
 6) [Очень интересная реализация, которая выглядит довольно сложно](https://jivimberg.io/blog/2018/11/05/using-uuid-on-spring-data-jpa-entities/)
-7) [Разрбор варианта с генерацией UUID на стороне приложения](https://jpa-buddy.com/blog/the-ultimate-guide-on-client/)
+7) [Разбор варианта с генерацией UUID на стороне приложения](https://jpa-buddy.com/blog/the-ultimate-guide-on-client/)
 8) [Гений Hibernate'а и его взгляд на проблему](https://vladmihalcea.com/how-to-implement-equals-and-hashcode-using-the-jpa-entity-identifier/)
